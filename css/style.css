@@ -1,0 +1,529 @@
+/* 1. LOCAL FONT CONNECTIONS @font-face */
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../assets/fonts/SoDoSans-Bold.eot');
+    src: local('SoDo Sans Bold'), local('SoDoSans-Bold'),
+        url('../assets/fonts/SoDoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SoDoSans-Bold.woff2') format('woff2'),
+        url('../assets/fonts/SoDoSans-Bold.woff') format('woff'),
+        url('../assets/fonts/SoDoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../assets/fonts/SoDoSans-Light.eot');
+    src: local('SoDo Sans Light'), local('SoDoSans-Light'),
+        url('../assets/fonts/SoDoSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SoDoSans-Light.woff2') format('woff2'),
+        url('../assets/fonts/SoDoSans-Light.woff') format('woff'),
+        url('../assets/fonts/SoDoSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../assets/fonts/SoDoSans-Regular.eot');
+    src: local('SoDo Sans Regular'), local('SoDoSans-Regular'),
+        url('../assets/fonts/SoDoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SoDoSans-Regular.woff2') format('woff2'),
+        url('../assets/fonts/SoDoSans-Regular.woff') format('woff'),
+        url('../assets/fonts/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('../assets/fonts/SoDoSans-SemiBold.eot');
+    src: local('SoDo Sans SemiBold'), local('SoDoSans-SemiBold'),
+        url('../assets/fonts/SoDoSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/SoDoSans-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/SoDoSans-SemiBold.woff') format('woff'),
+        url('../assets/fonts/SoDoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* BOX MODEL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 1.5;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* NAVBAR */
+.navbar {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* MAIN FLEX CONTAINER */
+.nav-wrapper-box {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* LEFT SECTION */
+.nav-left {
+    float: left;
+    width: 60%;
+}
+
+.logo {
+    float: left;
+    margin-right: 48px;
+    line-height: 1;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-top: 16px;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-link {
+    font-family: "SoDoSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-right: 30px;
+}
+
+.nav-link:hover {
+    color: #00754a;
+}
+
+/* RIGHT SECTION */
+.nav-right {
+    float: right;
+    width: 40%;
+    align-items: center;
+    padding-top: 14px;
+}
+
+.find-store {
+    font-family: "SoDoSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    float: left;
+    color: #000000;
+    font-size: 14px;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.pin-icon {
+    width: 18px;
+    height: auto;
+    margin-right: 8px;
+    float: left;
+    margin-top: -1px;
+}
+
+.btn-secondary, .btn-primary {
+    font-family: "SoDoSans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    float: left;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+
+.btn-secondary {
+    border: 1px solid #000000;
+    color: #000000;
+    margin-right: 16px;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #333333;
+}
+
+/* HEADER */
+.announcement-header {
+    background-color: #32462f;
+    width: 100%;
+    padding: 32px 0;
+    overflow: hidden;
+}
+
+.header-content {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+/* TEXT */
+.header-text {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 32px;
+    margin: 0;
+    float: left;
+}
+
+/* BUTTON */
+.btn-header-outline {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #32462f;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-left: 15px;
+    border: 2px solid #ffffff;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+}
+
+/* SECTION 1 */
+.promo-section-green {
+    width: 100%;
+    background-color: #006242;
+    margin-top: 32px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.promo-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* LEFT SIDE: IMAGE */
+.image-box {
+    width: 50%;
+    line-height: 0;
+    float: left;
+}   
+
+.gift-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RIGHT SIDE: TEXT BOX */
+.text-box {
+    width: 50%;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.title {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 550px;
+    margin-bottom: 32px;
+}
+
+.btn-outline {
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* SECTION 2 */
+.promo-section-green {
+    width: 100%;
+    border-color: #00754a;
+    margin-top: 32px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.promo-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* RIGHT SIDE: IMAGE */
+.promo-container > .gift-image {
+    width: 50%;
+    height: auto;
+    float: right;
+}
+
+.text-box {
+    width: 50%;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.title {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.description {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 32px;
+}
+
+.btn-outline {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+.main_footer {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 32px 0 48px;
+    margin-top: 48px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.footer_wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.footer_grid {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_col {
+    width: 20%;
+    float: left;
+    padding-right: 30px;
+} 
+
+.footer_heading {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #212121;
+    margin: 0 0 38px 0;
+}
+
+.footer_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_links li {
+    margin-bottom: 24px;
+}
+
+.footer_links a {
+    font-family: "SoDo Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    color: #808080;
+}
+
+.footer_links a:hover {
+    color: #000000;
+}
+
+/* SOCIAL ICONS */
+.footer_divider {
+    border: 0;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.footer_social {
+    width: 100%;
+    padding-top: 32px;
+}
+
+.social_icon_btn {
+    float: left;
+    margin-right: 16px;
+}
+
+.social_icon_btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/* FOOTER POLICY */
+.footer_policy {
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 40px 24px 40px;
+}
+
+.policy_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.policy_list li {
+    width: 100%;
+    margin-bottom: 16px;
+    float: left;
+}
+
+.policy_list a {
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #212121;
+}
+
+.policy_list a:hover {
+    text-decoration: underline;
+}
+
+.copyright_text {
+    font-family: 'SoDo Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #6a6a6a;
+    float: left;
+    width: 100%;
+    padding-top: 16px;
+}
+
+/* Laptop Zone */
+@media screen and (max-width: 1199px) {
+    .nav-wrapper-box, .footer_wrapper {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+
+    .text-box {
+        padding: 40px 30px;
+    }
+}
+
+/* Tablet Layout */
+@media screen and (max-width: 991px) {
+    .nav-wrapper-box, .footer_wrapper {
+        max-width: 720px;
+    }
+}
+
+/* Mobile Layout */
+@media screen and (max-width: 768px) {
+    .nav-wrapper-box, .footer_wrapper {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .nav-left {
+        width: 50%;
+    }
+
+    .nav-right {
+        width: 50%;
+    }
+
+
+    .promo-container {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .gift-image {
+        max-width: 100%;
+        height: 300px;
+    }
+    .footer_col {
+        padding-right: 15px;
+    }
+}
